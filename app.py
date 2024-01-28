@@ -18,4 +18,4 @@ if __name__ == '__main__':
 
     ## to list docker image docker images
     ## to run docker images
-    ## 
+    ## su -
