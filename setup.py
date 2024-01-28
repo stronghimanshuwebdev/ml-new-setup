@@ -5,7 +5,7 @@ from setuptools import setup
 
 
 PROJECT_NAME = "housing-predictor"
-VERSION = "0.0.1"
+VERSION = "0.0.2"
 AUTHOR = "Himanshu Kumar Chaturvedi"
 DESCRIPTION = "This is My First Project with full setup"
 PACKAGES = ["housing"]
