@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup,find_packages
  
 
 
@@ -18,14 +18,14 @@ def get_requirements_list():
         return this function is going to return a list which contain name of library mention in requirements.txt
         """
         with open(REQUIREMENTS_FILE_NAME) as requirement_file:
-            return requirement_file.readlines()
+            return requirement_file.readlines().remove("-e .")
 
 setup(
     name=PROJECT_NAME,
     version=VERSION,
     author=AUTHOR,
     description=DESCRIPTION,
-    packages=PACKAGES,
+    packages=find_packages,
     install_requires=get_requirements_list()
 
 )
